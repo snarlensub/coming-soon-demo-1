@@ -6,10 +6,14 @@ import Navbar from "../components/Navbar";
 const theme = {
   colors: {
     backgroundPrimary: "#FFBFB7",
-    primary: "#0070f3"
+    primary: "#0070f3",
+    background: {
+      mainColor: "#FBBCB6",
+      secondaryColor: "#ffffff"
+    }
   },
   fonts: {
-    fontPrimary: "#FFFFFF",
+    fontPrimary: "#120548",
     fontFamilyPrimary: "sans-serif"
   }
 };
