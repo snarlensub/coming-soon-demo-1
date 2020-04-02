@@ -25,6 +25,20 @@ const NavbarItem = styled.li`
   color: ${({ theme }) => theme.fonts.fontPrimary};
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
   font-size: 0.8em;
+
+  a {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+
+      &:visited {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
+      }
+  }
+
+  }
 `;
 
 const LogoWrapper = styled.span`
@@ -39,9 +53,15 @@ const Navbar = () => {
         <Logo />
       </LogoWrapper>
       <NavbarList>
-        <NavbarItem>about</NavbarItem>
-        <NavbarItem>contact</NavbarItem>
-        <NavbarItem>mail</NavbarItem>
+        <NavbarItem>
+          <a href="https://www.instagram.com/">Instagram</a>
+        </NavbarItem>
+        <NavbarItem>
+          <a href="https://www.facebook.com/">Facebook</a>
+        </NavbarItem>
+        <NavbarItem>
+          <a href="https://www.twitter.com/">Twitter</a>
+        </NavbarItem>
       </NavbarList>
     </NavbarWrapper>
   );
