@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Soleil-Regular";
+  src: url(../static/fonts/Soleil-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Soleil-ExtraBold";
+  src: url(../static/fonts/Soleil-ExtraBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Soleil-SemiBold";
+  src: url(../static/fonts/Soleil-SemiBold.otf) format("opentype");
+}

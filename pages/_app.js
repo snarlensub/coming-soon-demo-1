@@ -2,6 +2,7 @@ import App from "next/app";
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Navbar from "../components/Navbar";
+import "./index.css";
 
 const theme = {
   colors: {
