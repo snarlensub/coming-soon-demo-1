@@ -9,7 +9,7 @@ const NavbarWrapper = styled.div`
   position: absolute;
   align-items: center;
   justify-content: space-around;
-  margin-top: 25px;
+  margin-top: 2em;
 `;
 
 const NavbarList = styled.ul`
@@ -24,7 +24,8 @@ const NavbarItem = styled.li`
   padding: 0px 0.7rem;
   color: ${({ theme }) => theme.fonts.fontPrimary};
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
-  font-size: 0.8em;
+  font-size: 0.5em;
+  font-weight: 800;
 
   a {
       text-decoration: inherit;

@@ -5,16 +5,19 @@ const HeroTextTitle = styled.h1`
   color: ${({ theme }) => theme.fonts.fontPrimary};
   margin-bottom: 15%;
   max-width: 6em;
+  font-size: 2.2em;
+  font-weight: 800;
 `;
 
 const HeroTextSubtitle = styled.h3`
   color: ${({ theme }) => theme.fonts.fontPrimary};
   max-width: 14em;
+  font-size: 0.9em;
 `;
 
 const HeroTextWrapper = styled.div`
   width: 100%;
-  height: 30%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
