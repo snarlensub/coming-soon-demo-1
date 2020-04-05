@@ -12,6 +12,12 @@ const InputElement = styled.input`
 
 const ButtonElement = styled.button`
   width: 50%;
+  background-color: ${({ theme }) => theme.colors.input.primary};
+  color: ${({ theme }) => theme.colors.background.secondaryColor};
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.input.primaryOnHover};
+  }
 `;
 
 const HeroInput = ({ placeholderValue }) => {
