@@ -13,8 +13,8 @@ const HeroTextTitle = styled.h1`
 
 const HeroTextSubtitle = styled.h3`
   color: ${({ theme }) => theme.fonts.fontPrimary};
-  max-width: 14em;
-  font-size: 0.9em;
+  max-width: 15.4em;
+  font-size: 0.85em;
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
   line-height: 1.2em;
 `;
@@ -38,7 +38,7 @@ const HeroText = () => {
     <HeroTextWrapper>
       <HeroTextTitle>Un Podcast. Sin Vueltas.</HeroTextTitle>
       <HeroTextSubtitle>
-        Hablamos e iteramos sobre tech, diseño y desarrollo. Lo freelance y lo
+        Hablamos e iteramos sobre tech, diseño y desarrollo. Lo freelance, y lo
         corporativo.
       </HeroTextSubtitle>
     </HeroTextWrapper>
