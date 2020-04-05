@@ -11,6 +11,10 @@ const theme = {
     background: {
       mainColor: "#FBBCB6",
       secondaryColor: "#ffffff"
+    },
+    input: {
+      primary: "#110548",
+      primaryOnHover: "#230E7A"
     }
   },
   fonts: {
