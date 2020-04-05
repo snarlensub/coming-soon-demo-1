@@ -6,14 +6,31 @@ const FormWrapper = styled.form`
   display: flex;
 `;
 const InputElement = styled.input`
-  height: 5em;
+  height: 3em;
   width: 75%;
+  font-size: 0.6em;
+  padding-left: 1.2em;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 10px 0 rgba(18, 5, 72, 0.1);
+  color: ${({ theme }) => theme.fonts.fontPrimary};
+
+  ::placeholder {
+    opacity: 0.5;
+    color: ${({ theme }) => theme.fonts.fontPrimary};
+  }
 `;
 
 const ButtonElement = styled.button`
   width: 50%;
   background-color: ${({ theme }) => theme.colors.input.primary};
   color: ${({ theme }) => theme.colors.background.secondaryColor};
+  font-size: 0.52em;
+  font-weight: 600;
+  position: relative;
+  left: -1px;
+  border: none;
+  border-radius: 0 4px 4px 0;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.input.primaryOnHover};
