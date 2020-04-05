@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 const HeroTextTitle = styled.h1`
   color: ${({ theme }) => theme.fonts.fontPrimary};
-  margin-bottom: 15%;
+  margin-bottom: 0.4em;
   max-width: 6em;
   font-size: 2em;
   font-weight: 800;
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimaryBold};
+  line-height: 1.1em;
 `;
 
 const HeroTextSubtitle = styled.h3`
@@ -15,6 +16,7 @@ const HeroTextSubtitle = styled.h3`
   max-width: 14em;
   font-size: 0.9em;
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
+  line-height: 1.2em;
 `;
 
 const HeroTextWrapper = styled.div`
@@ -27,14 +29,14 @@ const HeroTextWrapper = styled.div`
   position: relative;
   word-break: break-word;
   max-width: 14em;
-  padding: 0px 10% 0px 10%;
-  top: 3.5em;
+  padding: 0px 10% 0px 12%;
+  top: 3em;
 `;
 
 const HeroText = () => {
   return (
     <HeroTextWrapper>
-      <HeroTextTitle>Un Podcast. Sin vueltas.</HeroTextTitle>
+      <HeroTextTitle>Un Podcast. Sin Vueltas.</HeroTextTitle>
       <HeroTextSubtitle>
         Hablamos e iteramos sobre tech, diseño y desarrollo. Lo freelance y lo
         corporativo.
