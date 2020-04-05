@@ -24,7 +24,7 @@ const NavbarItem = styled.li`
   padding: 0px 0.7rem;
   color: ${({ theme }) => theme.fonts.fontPrimary};
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
-  font-size: 0.5em;
+  font-size: 0.6em;
   font-weight: 800;
 
   a {

@@ -4,6 +4,13 @@ import styled from "styled-components";
 import FontReset from "../components/FontReset";
 import { Reset } from "styled-reset";
 import HeroText from "../components/HeroText";
+import HeroImage from "../components/HeroImage";
+
+const heroImage = {
+  img: "../static/SPKIT_Hero.png",
+  img2X: "../static/SPKIT_Hero@2x.png",
+  alt: "Hero Image - A male person holding a paper"
+};
 
 const Title = styled.h1`
   font-size: 3.5em;
@@ -38,7 +45,7 @@ const Hero = styled.section`
 const HalfPrimary = styled.div`
   width: 50%;
   background-color: ${({ theme }) => theme.colors.background.mainColor};
-  height: 100vh;
+  height: auto;
 `;
 const HalfSecondary = styled.div`
   width: 50%;
@@ -54,12 +61,16 @@ const Home = props => (
     <Reset />
     <FontReset />
     <HomeWrapper>
-      {/* <Hero> */}
-      <HalfPrimary />
+      <HalfPrimary>
+        <HeroImage
+          img={heroImage.img}
+          img2X={heroImage.img2X}
+          alt={heroImage.alt}
+        />
+      </HalfPrimary>
       <HalfSecondary>
         <HeroText />
       </HalfSecondary>
-      {/* </Hero> */}
     </HomeWrapper>
   </>
 );
