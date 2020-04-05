@@ -16,7 +16,7 @@ const HeroTextSubtitle = styled.h3`
   max-width: 15.4em;
   font-size: 0.85em;
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
-  line-height: 1.2em;
+  line-height: 1.3em;
 `;
 
 const HeroTextWrapper = styled.div`
