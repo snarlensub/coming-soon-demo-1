@@ -45,7 +45,7 @@ const Hero = styled.section`
 const HalfPrimary = styled.div`
   width: 50%;
   background-color: ${({ theme }) => theme.colors.background.mainColor};
-  height: 100vh;
+  height: auto;
 `;
 const HalfSecondary = styled.div`
   width: 50%;

@@ -15,7 +15,9 @@ const theme = {
   },
   fonts: {
     fontPrimary: "#120548",
-    fontFamilyPrimary: "sans-serif"
+    fontFamilyPrimary: "Soleil-Regular, sans-serif",
+    fontFamilyPrimaryBold: "Soleil-ExtraBold, sans-serif",
+    fontFamilyPrimarySemiBold: "Soleil-SemiBold, sans-serif"
   }
 };
 
