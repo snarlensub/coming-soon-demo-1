@@ -46,6 +46,7 @@ const HalfPrimary = styled.div`
   width: 50%;
   background-color: ${({ theme }) => theme.colors.background.mainColor};
   height: auto;
+  overflow: hidden;
 `;
 const HalfSecondary = styled.div`
   width: 50%;
