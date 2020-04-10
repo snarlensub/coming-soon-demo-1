@@ -19,6 +19,7 @@ const InputElement = styled.input`
   ::placeholder {
     opacity: 0.5;
     color: ${({ theme }) => theme.fonts.fontPrimary};
+    letter-spacing: 0.5px;
   }
 `;
 
