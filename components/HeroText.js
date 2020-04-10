@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HeroInput from "../components/HeroInput";
+import MusicService from "../components/MusicService";
 
 const HeroTextTitle = styled.h1`
   color: ${({ theme }) => theme.fonts.fontPrimary};
@@ -32,7 +33,6 @@ const HeroTextWrapper = styled.div`
   word-break: break-word;
   max-width: 14em;
   padding: 0px 10% 0px 12%;
-  top: 5.1em;
 `;
 
 const HeroText = () => {
@@ -44,6 +44,7 @@ const HeroText = () => {
         corporativo.
       </HeroTextSubtitle>
       <HeroInput placeholderValue={"Tipea tu email"} />
+      <MusicService />
     </HeroTextWrapper>
   );
 };

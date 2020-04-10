@@ -22,13 +22,11 @@ const Title = styled.h1`
 
 const HomeWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* background-color: ${({ theme }) => theme.colors.backgroundPrimary}; */
   // background: linear-gradient(20deg, #f79b9b,#ffbebe);
-  min-height: 100vh;
+
   
   
 `;
@@ -55,6 +53,8 @@ const HalfSecondary = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 9.9em;
+  padding-bottom: 1em;
 `;
 
 const Home = props => (
