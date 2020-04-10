@@ -33,7 +33,6 @@ const HeroTextWrapper = styled.div`
   word-break: break-word;
   max-width: 14em;
   padding: 0px 10% 0px 12%;
-  top: 5.1em;
 `;
 
 const HeroText = () => {
