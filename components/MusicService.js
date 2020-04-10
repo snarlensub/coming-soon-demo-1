@@ -9,6 +9,7 @@ const MusicServiceWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 93%;
+  padding-top: 7.5em;
 `;
 
 const MusicServiceParagraph = styled.p`
