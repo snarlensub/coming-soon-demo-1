@@ -4,7 +4,6 @@ import styled from "styled-components";
 const FormWrapper = styled.form`
   width: 17.4em;
   display: flex;
-  padding-bottom: 7.5em;
 `;
 const InputElement = styled.input`
   height: 3em;

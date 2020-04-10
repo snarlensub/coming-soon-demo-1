@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import HeroInput from "../components/HeroInput";
-import MusicService from "../components/MusicService";
 
 const HeroTextTitle = styled.h1`
   color: ${({ theme }) => theme.fonts.fontPrimary};
@@ -45,7 +44,6 @@ const HeroText = () => {
         corporativo.
       </HeroTextSubtitle>
       <HeroInput placeholderValue={"Tipea tu email"} />
-      <MusicService />
     </HeroTextWrapper>
   );
 };

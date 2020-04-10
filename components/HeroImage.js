@@ -7,7 +7,7 @@ const HeroImageWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 6.1em;
+  margin-top: 11.5em;
 
   img {
     height: auto;
