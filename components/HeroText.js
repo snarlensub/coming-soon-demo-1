@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import HeroInput from "../components/HeroInput";
 
 const HeroTextTitle = styled.h1`
   color: ${({ theme }) => theme.fonts.fontPrimary};
@@ -17,6 +18,7 @@ const HeroTextSubtitle = styled.h3`
   font-size: 0.85em;
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
   line-height: 1.3em;
+  margin-bottom: 2.3em;
 `;
 
 const HeroTextWrapper = styled.div`
@@ -30,7 +32,7 @@ const HeroTextWrapper = styled.div`
   word-break: break-word;
   max-width: 14em;
   padding: 0px 10% 0px 12%;
-  top: 3em;
+  top: 5.1em;
 `;
 
 const HeroText = () => {
@@ -41,6 +43,7 @@ const HeroText = () => {
         Hablamos e iteramos sobre tech, diseño y desarrollo. Lo freelance, y lo
         corporativo.
       </HeroTextSubtitle>
+      <HeroInput placeholderValue={"Tipea tu email"} />
     </HeroTextWrapper>
   );
 };
