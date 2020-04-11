@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const FormWrapper = styled.form`
   width: 17.4em;
   display: flex;
-  padding-bottom: 7.5em;
 `;
 const InputElement = styled.input`
   height: 3em;
@@ -39,12 +38,47 @@ const ButtonElement = styled.button`
   }
 `;
 
+const InputParagraph = styled.p`
+  color: ${({ theme }) => theme.fonts.fontPrimary};
+  font-size: 0.55em;
+  font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
+  line-height: 1.3em;
+  position: absolute;
+  margin-top: 5.2em;
+`;
+
+const BoldParagraph = styled.span`
+  font-weight: 800;
+`;
+
 const HeroInput = ({ placeholderValue }) => {
+  const [inputClicked, setInputClicked] = useState(false);
+  const [subscriptionValue, setSubscriptionValue] = useState(
+    "ENTERATE PRIMERO"
+  );
+
+  const handleSubmit = event => {
+    if (!inputClicked) {
+      setInputClicked(true);
+      setSubscriptionValue("SUSCRITO");
+    }
+    event.preventDefault();
+  };
   return (
-    <FormWrapper action="#">
-      <InputElement placeholder={placeholderValue} type="text" />
-      <ButtonElement>ENTERATE PRIMERO</ButtonElement>
-    </FormWrapper>
+    <>
+      <FormWrapper method="post" onSubmit={handleSubmit}>
+        <InputElement placeholder={placeholderValue} type="text" />
+        <ButtonElement type="submit">{subscriptionValue}</ButtonElement>
+      </FormWrapper>
+      {inputClicked ? (
+        <InputParagraph>
+          <BoldParagraph>¡Genial!</BoldParagraph> Te vas a enterar primero
+          cuando el Podcast esté online.
+        </InputParagraph>
+      ) : (
+        ""
+      )}
+    </>
   );
 };
 
