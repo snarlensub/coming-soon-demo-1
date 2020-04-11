@@ -61,6 +61,11 @@ const InputParagraph = styled.p`
   line-height: 1.3em;
   position: absolute;
   margin-top: 5.2em;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    margin-top: 6.2em;
+  }
 `;
 
 const BoldParagraph = styled.span`

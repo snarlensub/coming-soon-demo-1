@@ -28,7 +28,6 @@ const HeroTextSubtitle = styled.h3`
 
   @media (max-width: 768px) {
     max-width: 100%;
-    font-size: 0.7em;
   }
 `;
 

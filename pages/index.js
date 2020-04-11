@@ -52,6 +52,7 @@ const HalfPrimary = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    height: 70vh;
   }
 `;
 const HalfSecondary = styled.div`
@@ -67,7 +68,7 @@ const HalfSecondary = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     padding: 0;
-    height: 70vh;
+    height: 65vh;
   }
 `;
 

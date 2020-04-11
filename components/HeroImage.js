@@ -13,6 +13,16 @@ const HeroImageWrapper = styled.div`
     height: auto;
     width: auto;
   }
+
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 100%:
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
 `;
 
 const HeroImage = ({ img, img2X, alt }) => {
