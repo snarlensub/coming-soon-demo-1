@@ -4,6 +4,11 @@ import styled from "styled-components";
 const FormWrapper = styled.form`
   width: 17.4em;
   display: flex;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 `;
 const InputElement = styled.input`
   height: 3em;
@@ -19,6 +24,12 @@ const InputElement = styled.input`
     opacity: 0.5;
     color: ${({ theme }) => theme.fonts.fontPrimary};
     letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 1.5em;
+    height: 3.8em;
   }
 `;
 
@@ -36,6 +47,11 @@ const ButtonElement = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.colors.input.primaryOnHover};
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 4em;
+  }
 `;
 
 const InputParagraph = styled.p`
@@ -45,6 +61,11 @@ const InputParagraph = styled.p`
   line-height: 1.3em;
   position: absolute;
   margin-top: 5.2em;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    margin-top: 6.2em;
+  }
 `;
 
 const BoldParagraph = styled.span`
