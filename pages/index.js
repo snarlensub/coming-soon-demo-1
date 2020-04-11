@@ -5,6 +5,7 @@ import FontReset from "../components/FontReset";
 import { Reset } from "styled-reset";
 import HeroText from "../components/HeroText";
 import HeroImage from "../components/HeroImage";
+import Footer from "../components/Footer";
 
 const heroImage = {
   img: "../static/SPKIT_Hero.png",
@@ -27,6 +28,9 @@ const HomeWrapper = styled.div`
   /* background-color: ${({ theme }) => theme.colors.backgroundPrimary}; */
   // background: linear-gradient(20deg, #f79b9b,#ffbebe);
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   
   
 `;
@@ -45,6 +49,11 @@ const HalfPrimary = styled.div`
   background-color: ${({ theme }) => theme.colors.background.mainColor};
   height: auto;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 70vh;
+  }
 `;
 const HalfSecondary = styled.div`
   width: 50%;
@@ -55,25 +64,34 @@ const HalfSecondary = styled.div`
   align-items: center;
   padding-top: 9.9em;
   padding-bottom: 1em;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    height: 65vh;
+  }
 `;
 
-const Home = props => (
-  <>
-    <Reset />
-    <FontReset />
-    <HomeWrapper>
-      <HalfPrimary>
-        <HeroImage
-          img={heroImage.img}
-          img2X={heroImage.img2X}
-          alt={heroImage.alt}
-        />
-      </HalfPrimary>
-      <HalfSecondary>
-        <HeroText />
-      </HalfSecondary>
-    </HomeWrapper>
-  </>
-);
+const Home = props => {
+  return (
+    <>
+      <Reset />
+      <FontReset />
+      <HomeWrapper>
+        <HalfPrimary>
+          <HeroImage
+            img={heroImage.img}
+            img2X={heroImage.img2X}
+            alt={heroImage.alt}
+          />
+        </HalfPrimary>
+        <HalfSecondary>
+          <HeroText />
+        </HalfSecondary>
+        <Footer />
+      </HomeWrapper>
+    </>
+  );
+};
 
 export default Home;

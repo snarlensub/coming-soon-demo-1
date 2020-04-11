@@ -10,6 +10,12 @@ const NavbarWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-top: 2em;
+
+  @media (max-width: 600px) {
+    margin-left: 1em;
+    justify-content: flex-start;
+    width: auto;
+  }
 `;
 
 const NavbarList = styled.ul`
@@ -18,6 +24,10 @@ const NavbarList = styled.ul`
   display: flex;
   justify-content: flex-end;
   list-style: outside none none;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const NavbarItem = styled.li`
