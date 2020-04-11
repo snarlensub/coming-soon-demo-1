@@ -2,34 +2,29 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
 
-const NavbarWrapper = styled.div`
-  display: flex;
+const FooterWrapper = styled.div`
+  display: none;
   width: 100%;
   height: auto;
-  position: absolute;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 2em;
+  justify-content: center;
 
   @media (max-width: 600px) {
-    margin-left: 1em;
-    justify-content: flex-start;
+    display: flex;
+    border: 3px solid red;
+    height: 3em;
   }
 `;
 
-const NavbarList = styled.ul`
-  width: 70%;
+const FooterList = styled.ul`
+  width: 100%;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   list-style: outside none none;
-
-  @media (max-width: 600px) {
-    display: none;
-  }
 `;
 
-const NavbarItem = styled.li`
+const FooterItem = styled.li`
   padding: 0px 0.7rem;
   color: ${({ theme }) => theme.fonts.fontPrimary};
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
@@ -56,25 +51,22 @@ const LogoWrapper = styled.span`
   width: auto;
 `;
 
-const Navbar = () => {
+const Footer = () => {
   return (
-    <NavbarWrapper>
-      <LogoWrapper>
-        <Logo />
-      </LogoWrapper>
-      <NavbarList>
-        <NavbarItem>
+    <FooterWrapper>
+      <FooterList>
+        <FooterItem>
           <a href="https://www.instagram.com/">Instagram</a>
-        </NavbarItem>
-        <NavbarItem>
+        </FooterItem>
+        <FooterItem>
           <a href="https://www.facebook.com/">Facebook</a>
-        </NavbarItem>
-        <NavbarItem>
+        </FooterItem>
+        <FooterItem>
           <a href="https://www.twitter.com/">Twitter</a>
-        </NavbarItem>
-      </NavbarList>
-    </NavbarWrapper>
+        </FooterItem>
+      </FooterList>
+    </FooterWrapper>
   );
 };
 
-export default Navbar;
+export default Footer;

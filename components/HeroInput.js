@@ -29,6 +29,7 @@ const InputElement = styled.input`
   @media (max-width: 768px) {
     width: 100%;
     margin-bottom: 1.5em;
+    height: 3.8em;
   }
 `;
 
@@ -49,7 +50,7 @@ const ButtonElement = styled.button`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 3.5em;
+    height: 4em;
   }
 `;
 

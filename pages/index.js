@@ -5,6 +5,7 @@ import FontReset from "../components/FontReset";
 import { Reset } from "styled-reset";
 import HeroText from "../components/HeroText";
 import HeroImage from "../components/HeroImage";
+import Footer from "../components/Footer";
 
 const heroImage = {
   img: "../static/SPKIT_Hero.png",
@@ -66,27 +67,30 @@ const HalfSecondary = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     padding: 0;
-    height: 80vh;
+    height: 70vh;
   }
 `;
 
-const Home = props => (
-  <>
-    <Reset />
-    <FontReset />
-    <HomeWrapper>
-      <HalfPrimary>
-        <HeroImage
-          img={heroImage.img}
-          img2X={heroImage.img2X}
-          alt={heroImage.alt}
-        />
-      </HalfPrimary>
-      <HalfSecondary>
-        <HeroText />
-      </HalfSecondary>
-    </HomeWrapper>
-  </>
-);
+const Home = props => {
+  return (
+    <>
+      <Reset />
+      <FontReset />
+      <HomeWrapper>
+        <HalfPrimary>
+          <HeroImage
+            img={heroImage.img}
+            img2X={heroImage.img2X}
+            alt={heroImage.alt}
+          />
+        </HalfPrimary>
+        <HalfSecondary>
+          <HeroText />
+        </HalfSecondary>
+        <Footer />
+      </HomeWrapper>
+    </>
+  );
+};
 
 export default Home;
