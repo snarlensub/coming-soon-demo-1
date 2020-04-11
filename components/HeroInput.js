@@ -4,6 +4,11 @@ import styled from "styled-components";
 const FormWrapper = styled.form`
   width: 17.4em;
   display: flex;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 `;
 const InputElement = styled.input`
   height: 3em;
@@ -20,6 +25,11 @@ const InputElement = styled.input`
     color: ${({ theme }) => theme.fonts.fontPrimary};
     letter-spacing: 0.5px;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
 `;
 
 const ButtonElement = styled.button`
@@ -35,6 +45,11 @@ const ButtonElement = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.input.primaryOnHover};
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 3.5em;
   }
 `;
 
