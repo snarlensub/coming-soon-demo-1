@@ -27,6 +27,9 @@ const HomeWrapper = styled.div`
   /* background-color: ${({ theme }) => theme.colors.backgroundPrimary}; */
   // background: linear-gradient(20deg, #f79b9b,#ffbebe);
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   
   
 `;
@@ -45,6 +48,10 @@ const HalfPrimary = styled.div`
   background-color: ${({ theme }) => theme.colors.background.mainColor};
   height: auto;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const HalfSecondary = styled.div`
   width: 50%;
@@ -55,6 +62,11 @@ const HalfSecondary = styled.div`
   align-items: center;
   padding-top: 9.9em;
   padding-bottom: 1em;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 const Home = props => (
