@@ -14,6 +14,7 @@ const NavbarWrapper = styled.div`
   @media (max-width: 600px) {
     margin-left: 1em;
     justify-content: flex-start;
+    width: auto;
   }
 `;
 

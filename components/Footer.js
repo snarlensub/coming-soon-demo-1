@@ -15,7 +15,6 @@ const FooterWrapper = styled.div`
 
   @media (max-width: 600px) {
     display: flex;
-    border: 3px solid red;
     height: 4.8em;
   }
 `;
@@ -26,10 +25,11 @@ const FooterList = styled.ul`
   display: flex;
   justify-content: center;
   list-style: outside none none;
+  align-items: baseline;
 `;
 
 const FooterItem = styled.li`
-  padding: 0px 0.7rem;
+  padding: 0px 1rem;
   color: ${({ theme }) => theme.fonts.fontPrimary};
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
   font-size: 0.6em;
