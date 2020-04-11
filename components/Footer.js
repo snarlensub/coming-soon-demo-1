@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
+import FBLogo from "./FBLogo";
+import InstagramLogo from "./InstagramLogo";
+import TwitterLogo from "./TwitterLogo";
 
 const FooterWrapper = styled.div`
   display: none;
@@ -8,11 +11,12 @@ const FooterWrapper = styled.div`
   height: auto;
   align-items: center;
   justify-content: center;
+  background-color: ${({ theme }) => theme.colors.input.primary};
 
   @media (max-width: 600px) {
     display: flex;
     border: 3px solid red;
-    height: 3em;
+    height: 4.8em;
   }
 `;
 
@@ -56,13 +60,19 @@ const Footer = () => {
     <FooterWrapper>
       <FooterList>
         <FooterItem>
-          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.instagram.com/">
+            <InstagramLogo />
+          </a>
         </FooterItem>
         <FooterItem>
-          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.facebook.com/">
+            <FBLogo />
+          </a>
         </FooterItem>
         <FooterItem>
-          <a href="https://www.twitter.com/">Twitter</a>
+          <a href="https://www.twitter.com/">
+            <TwitterLogo />
+          </a>
         </FooterItem>
       </FooterList>
     </FooterWrapper>
