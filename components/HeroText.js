@@ -11,6 +11,11 @@ const HeroTextTitle = styled.h1`
   font-weight: 800;
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimaryBold};
   line-height: 1.1em;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    font-size: 1.8em;
+  }
 `;
 
 const HeroTextSubtitle = styled.h3`
@@ -20,6 +25,11 @@ const HeroTextSubtitle = styled.h3`
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
   line-height: 1.3em;
   margin-bottom: 2.3em;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    font-size: 0.7em;
+  }
 `;
 
 const HeroTextWrapper = styled.div`
@@ -33,6 +43,11 @@ const HeroTextWrapper = styled.div`
   word-break: break-word;
   max-width: 14em;
   padding: 0px 10% 0px 12%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 3%;
+  }
 `;
 
 const HeroText = () => {
