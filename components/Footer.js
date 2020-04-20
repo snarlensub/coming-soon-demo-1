@@ -17,6 +17,11 @@ const FooterWrapper = styled.div`
     display: flex;
     height: 4.8em;
   }
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    display: flex;
+    height: 4.8em;
+  }
 `;
 
 const FooterList = styled.ul`

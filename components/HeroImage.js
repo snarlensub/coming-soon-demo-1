@@ -11,17 +11,36 @@ const HeroImageWrapper = styled.div`
 
   img {
     height: auto;
-    width: auto;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
     height: 100%;
-    width: 100%:
+    width: 100%;
+    position: relative;
+    top: -10%;
 
     img {
       height: auto;
-      width: 100%;
+      width: 25em;
     }
+  }
+
+  @media (min-width: 400px) and (orientation: landscape) {
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    right: 2%;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    left: 12%;
+   
+    img {
+        100%;
+    }
+
   }
 `;
 
