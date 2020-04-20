@@ -16,6 +16,11 @@ const NavbarWrapper = styled.div`
     justify-content: flex-start;
     width: auto;
   }
+
+  @media (max-width: 800px) and (orientation: landscape) {
+    justify-content: flex-start;
+    margin-left: 2em;
+  }
 `;
 
 const NavbarList = styled.ul`
@@ -30,6 +35,10 @@ const NavbarList = styled.ul`
   }
 
   @media (max-width: 600px) {
+    display: none;
+  }
+
+  @media (max-width: 800px) and (orientation: landscape) {
     display: none;
   }
 `;

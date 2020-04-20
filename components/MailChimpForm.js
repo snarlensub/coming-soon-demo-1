@@ -64,7 +64,7 @@ const InputParagraph = styled.p`
 
   @media (max-width: 768px) {
     position: absolute;
-    margin-top: 6.2em;
+    margin-top: 11em;
   }
 `;
 
@@ -95,6 +95,12 @@ const CustomForm = ({ status, onValidated }) => {
 
   return (
     <FormWrapper>
+      <InputElement
+        ref={node => (email = node)}
+        type="email"
+        placeholder="Your email"
+      />
+      <ButtonElement onClick={submit}>{subscriptionValue}</ButtonElement>
       {status === "error" && (
         <InputParagraph>Parece que ese email ya existe :(</InputParagraph>
       )}
@@ -104,12 +110,6 @@ const CustomForm = ({ status, onValidated }) => {
           cuando el Podcast esté online.
         </InputParagraph>
       )}
-      <InputElement
-        ref={node => (email = node)}
-        type="email"
-        placeholder="Your email"
-      />
-      <ButtonElement onClick={submit}>{subscriptionValue}</ButtonElement>
     </FormWrapper>
   );
 };

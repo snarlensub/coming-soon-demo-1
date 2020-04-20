@@ -25,6 +25,23 @@ const HeroImageWrapper = styled.div`
       width: 25em;
     }
   }
+
+  @media (min-width: 400px) and (orientation: landscape) {
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    right: 2%;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    left: 12%;
+   
+    img {
+        100%;
+    }
+
+  }
 `;
 
 const HeroImage = ({ img, img2X, alt }) => {

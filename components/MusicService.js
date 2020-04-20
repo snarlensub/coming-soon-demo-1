@@ -12,7 +12,7 @@ const MusicServiceWrapper = styled.div`
   padding-top: 7.5em;
 
   @media (max-width: 768px) {
-    padding-top: 2.5em;
+    padding-top: 3.5em;
     padding-bottom: 1em;
     max-width: 100%;
     flex-direction: column;
