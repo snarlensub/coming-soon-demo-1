@@ -53,10 +53,11 @@ const NavbarItem = styled.li`
   font-size: 0.6em;
   font-weight: 800;
 
+
   a {
       text-decoration: inherit;
       color: inherit;
-      cursor: auto;
+      cursor: pointer;
 
       &:visited {
         text-decoration: inherit;
@@ -81,13 +82,13 @@ const Navbar = () => {
       </LogoWrapper>
       <NavbarList>
         <NavbarItem>
-          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.instagram.com/speakingit.co/">Instagram</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.facebook.com/speakingitco">Facebook</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://www.twitter.com/">Twitter</a>
+          <a href="https://www.twitter.com/speakingitco">Twitter</a>
         </NavbarItem>
       </NavbarList>
     </NavbarWrapper>
