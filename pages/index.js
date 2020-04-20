@@ -31,6 +31,11 @@ const HomeWrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    flex-direction: column;
+  }
   
   
 `;
@@ -54,11 +59,16 @@ const HalfPrimary = styled.div`
     width: 100%;
     height: 70vh;
   }
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    width: 100%;
+    height: 100vh;
+  }
 `;
 const HalfSecondary = styled.div`
   width: 50%;
   background-color: ${({ theme }) => theme.colors.background.secondaryColor};
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -66,6 +76,12 @@ const HalfSecondary = styled.div`
   padding-bottom: 1em;
 
   @media (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    height: 28em;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
     width: 100%;
     padding: 0;
     height: 28em;

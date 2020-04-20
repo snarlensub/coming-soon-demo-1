@@ -18,7 +18,7 @@ const FooterWrapper = styled.div`
     height: 4.8em;
   }
 
-  @media (max-width: 800px) and (orientation: landscape) {
+  @media (max-width: 850px) and (orientation: landscape) {
     display: flex;
     height: 4.8em;
   }

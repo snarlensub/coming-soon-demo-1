@@ -17,6 +17,20 @@ const MusicServiceWrapper = styled.div`
     max-width: 100%;
     flex-direction: column;
   }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+    max-width: 100%;
+    flex-direction: column;
+  }
 `;
 
 const MusicServiceParagraph = styled.p`
@@ -27,6 +41,14 @@ const MusicServiceParagraph = styled.p`
   line-height: 1.3em;
 
   @media (max-width: 768px) {
+    padding-bottom: 1.5em;
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    padding-bottom: 1.5em;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
     padding-bottom: 1.5em;
   }
 `;

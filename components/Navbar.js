@@ -17,9 +17,12 @@ const NavbarWrapper = styled.div`
     width: auto;
   }
 
-  @media (max-width: 800px) and (orientation: landscape) {
+  @media (max-width: 850px) and (orientation: landscape) {
     justify-content: flex-start;
-    margin-left: 2em;
+
+    span {
+      margin-left: 3%;
+    }
   }
 `;
 
@@ -38,7 +41,7 @@ const NavbarList = styled.ul`
     display: none;
   }
 
-  @media (max-width: 800px) and (orientation: landscape) {
+  @media (max-width: 850px) and (orientation: landscape) {
     display: none;
   }
 `;

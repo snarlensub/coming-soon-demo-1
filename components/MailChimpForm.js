@@ -2,10 +2,19 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const FormWrapper = styled.div`
-  width: 17.4em;
+  width: 16.4em;
   display: flex;
 
   @media (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    width: 16.4em;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
     width: 100%;
     flex-wrap: wrap;
   }
@@ -31,6 +40,12 @@ const InputElement = styled.input`
     margin-bottom: 1.5em;
     height: 3.8em;
   }
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    width: 100%;
+    margin-bottom: 1.5em;
+    height: 3.8em;
+  }
 `;
 
 const ButtonElement = styled.button`
@@ -52,6 +67,11 @@ const ButtonElement = styled.button`
     width: 100%;
     height: 4em;
   }
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    width: 100%;
+    height: 4em;
+  }
 `;
 
 const InputParagraph = styled.p`
@@ -63,6 +83,11 @@ const InputParagraph = styled.p`
   margin-top: 5.2em;
 
   @media (max-width: 768px) {
+    position: absolute;
+    margin-top: 11em;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
     position: absolute;
     margin-top: 11em;
   }

@@ -11,7 +11,7 @@ const HeroImageWrapper = styled.div`
 
   img {
     height: auto;
-    width: auto;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
