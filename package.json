@@ -12,6 +12,7 @@
     "next": "9.2.2",
     "react": "16.13.0",
     "react-dom": "16.13.0",
+    "react-mailchimp-subscribe": "^2.1.0",
     "styled-components": "^5.0.1",
     "styled-reset": "^4.1.0"
   }
