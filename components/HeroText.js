@@ -15,6 +15,12 @@ const HeroTextTitle = styled.h1`
   @media (max-width: 768px) {
     max-width: 100%;
     font-size: 1.8em;
+    margin-bottom: 1.3em;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    max-width: 100%;
+    font-size: 1.8em;
   }
 `;
 
@@ -27,6 +33,10 @@ const HeroTextSubtitle = styled.h3`
   margin-bottom: 2.3em;
 
   @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
     max-width: 100%;
   }
 `;
@@ -45,7 +55,12 @@ const HeroTextWrapper = styled.div`
 
   @media (max-width: 768px) {
     max-width: 100%;
-    padding: 0 3%;
+    padding: 0 6%;
+  }
+
+  @media (max-width: 850px) and (orientation: landscape) {
+    max-width: 100%;
+    padding: 0 6%;
   }
 `;
 
