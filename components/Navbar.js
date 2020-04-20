@@ -25,6 +25,10 @@ const NavbarList = styled.ul`
   justify-content: flex-end;
   list-style: outside none none;
 
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+
   @media (max-width: 600px) {
     display: none;
   }
