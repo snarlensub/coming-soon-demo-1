@@ -89,13 +89,19 @@ const Navbar = () => {
       </LogoWrapper>
       <NavbarList>
         <NavbarItem>
-          <a href="https://www.instagram.com/speakingit.co/">Instagram</a>
+          <a target="_blank" href="https://www.instagram.com/speakingit.co/">
+            Instagram
+          </a>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://www.facebook.com/speakingitco">Facebook</a>
+          <a target="_blank" href="https://www.facebook.com/speakingitco">
+            Facebook
+          </a>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://www.twitter.com/speakingitco">Twitter</a>
+          <a target="_blank" href="https://www.twitter.com/speakingitco">
+            Twitter
+          </a>
         </NavbarItem>
       </NavbarList>
     </NavbarWrapper>
