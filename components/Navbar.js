@@ -52,17 +52,24 @@ const NavbarItem = styled.li`
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
   font-size: 0.6em;
   font-weight: 800;
-
+  opacity: 1;
+  transition: all ease-in-out 0.15s;
 
   a {
       text-decoration: inherit;
       color: inherit;
       cursor: pointer;
+    }
 
       &:visited {
         text-decoration: inherit;
         color: inherit;
         cursor: auto;
+      }
+
+      &:hover {
+        opacity: 0.6;
+        color: ${({ theme }) => theme.fonts.fontPrimary};
       }
   }
 
