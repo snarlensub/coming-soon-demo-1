@@ -52,16 +52,24 @@ const NavbarItem = styled.li`
   font-family: ${({ theme }) => theme.fonts.fontFamilyPrimary};
   font-size: 0.6em;
   font-weight: 800;
+  opacity: 1;
+  transition: all ease-in-out 0.15s;
 
   a {
       text-decoration: inherit;
       color: inherit;
-      cursor: auto;
+      cursor: pointer;
+    }
 
       &:visited {
         text-decoration: inherit;
         color: inherit;
         cursor: auto;
+      }
+
+      &:hover {
+        opacity: 0.6;
+        color: ${({ theme }) => theme.fonts.fontPrimary};
       }
   }
 
@@ -81,13 +89,19 @@ const Navbar = () => {
       </LogoWrapper>
       <NavbarList>
         <NavbarItem>
-          <a href="https://www.instagram.com/">Instagram</a>
+          <a target="_blank" href="https://www.instagram.com/speakingit.co/">
+            Instagram
+          </a>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://www.facebook.com/">Facebook</a>
+          <a target="_blank" href="https://www.facebook.com/speakingitco">
+            Facebook
+          </a>
         </NavbarItem>
         <NavbarItem>
-          <a href="https://www.twitter.com/">Twitter</a>
+          <a target="_blank" href="https://www.twitter.com/speakingitco">
+            Twitter
+          </a>
         </NavbarItem>
       </NavbarList>
     </NavbarWrapper>
