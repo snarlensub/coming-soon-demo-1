@@ -65,17 +65,17 @@ const Footer = () => {
     <FooterWrapper>
       <FooterList>
         <FooterItem>
-          <a href="https://www.instagram.com/">
+          <a target="_blank" href="https://www.instagram.com/speakingit.co/">
             <InstagramLogo />
           </a>
         </FooterItem>
         <FooterItem>
-          <a href="https://www.facebook.com/">
+          <a target="_blank" href="https://www.facebook.com/speakingitco">
             <FBLogo />
           </a>
         </FooterItem>
         <FooterItem>
-          <a href="https://www.twitter.com/">
+          <a target="_blank" href="https://www.twitter.com/speakingitco">
             <TwitterLogo />
           </a>
         </FooterItem>

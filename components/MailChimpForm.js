@@ -58,8 +58,10 @@ const ButtonElement = styled.button`
   left: -1px;
   border: none;
   border-radius: 0 4px 4px 0;
+  transition: all ease-in-out 0.15s;
 
   &:hover {
+    opacity: 0.8;
     background-color: ${({ theme }) => theme.colors.input.primaryOnHover};
   }
 
