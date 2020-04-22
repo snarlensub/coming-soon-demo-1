@@ -93,6 +93,11 @@ const Home = props => {
     <>
       <Reset />
       <FontReset />
+      <Head>
+        <title>Speaking It</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <HomeWrapper>
         <HalfPrimary>
           <HeroImage
