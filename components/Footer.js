@@ -13,7 +13,7 @@ const FooterWrapper = styled.div`
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.input.primary};
 
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     display: flex;
     height: 4.8em;
   }
