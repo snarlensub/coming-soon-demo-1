@@ -8,7 +8,7 @@ const MusicServiceWrapper = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  max-width: 93%;
+  max-width: 100%;
   padding-top: 7.5em;
 
   @media (max-width: 768px) {

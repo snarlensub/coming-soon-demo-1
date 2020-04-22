@@ -14,7 +14,7 @@ const HeroImageWrapper = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     height: 100%;
     width: 100%;
     position: relative;

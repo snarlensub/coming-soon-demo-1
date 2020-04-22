@@ -11,7 +11,7 @@ const NavbarWrapper = styled.div`
   justify-content: space-around;
   margin-top: 2em;
 
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     margin-left: 1em;
     justify-content: flex-start;
     width: auto;
@@ -37,7 +37,7 @@ const NavbarList = styled.ul`
     width: 50%;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     display: none;
   }
 
